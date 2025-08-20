@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>VideOS — Загрузка</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://unpkg.com/@supabase/supabase-js@2"></script>
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <header>
+    <h1>VideOS</h1>
+    <nav>
+      <a href="index.html">Главная</a>
+      <a href="profile.html">Мой канал</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Загрузить видео</h2>
+    <input type="text" id="videoTitle" placeholder="Название"><br>
+    <textarea id="videoDesc" placeholder="Описание"></textarea><br>
+    <input type="file" id="videoFile"><br>
+    <button onclick="uploadVideo()">Загрузить</button>
+  </main>
+</body>
+</html>
